@@ -1,0 +1,619 @@
+
+.jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.jScrollPaneTrack {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	height: 100%;
+	background-image: url(colorscheme/royalblue/images/royalblue_onepx_bg.png);
+	
+}
+.jScrollPaneDrag {
+	position: absolute;
+	background: url(colorscheme/royalblue/images/scroll/royalblue_scr_03.png);
+	background-repeat:no-repeat;
+	background-position:-15px 11px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	height:11px;
+	background: url(colorscheme/royalblue/images/scroll/royalblue_scr_02.png);
+	background-position:-15px 0px;
+}
+.jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	height:11px;
+	background: url(colorscheme/royalblue/images/scroll/royalblue_scr_04.png);
+	background-position:-15px 0px;
+}
+a.jScrollArrowUp {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	background: url(colorscheme/royalblue/images/scroll/royalblue_scr_01.png);
+	background-position:-15px 0px;
+	height: 29px;
+}
+a.jScrollArrowUp:hover {
+	/*background-color: #f60;*/
+}
+
+a.jScrollArrowDown {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	text-indent: -2000px;
+	overflow: hidden;
+	background: url(colorscheme/royalblue/images/scroll/royalblue_scr_05.png);
+	background-position:-15px 0px;
+	height: 29px;
+}
+a.jScrollArrowDown:hover {
+	/*background-color: #f60;*/
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	/*background-color: #f00;*/
+}/* CV SPECIFIC */
+
+#content h5 span,#content h5 i{
+	float: right;
+}
+#content p span {
+	font-style: italic;
+}
+#content ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#content h1{
+	font-size:16pt;
+}
+#content h2{
+	font-size:8pt;
+}
+#content h3{
+	font-size:8pt;
+}
+#content h4{
+	font-size:8pt;
+}
+#content h5{
+	font-size:8pt;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5{
+	margin: 0 0 0.5em;
+}		/* FORMS */
+		form{
+			margin:0;padding:0;
+		}
+		div.invalid{
+			border-color:rgb(255,212,0);
+		}
+		.form input{
+			line-height:1.5em;
+			padding:0;
+			margin:0;
+		}
+		.innerhold input,.innerhold textarea{
+			outline:none;
+			background-color:transparent;
+			width:380px;
+			border:0;
+			overflow:hidden;
+		}
+		textarea{
+			line-height:1.5em;
+			margin:0;
+			padding:0;
+			resize: none;
+		}
+		label{
+			display:block;
+			font-weight:bold;
+			margin:0 0 0.5em;
+		}
+		label span{
+			font-style:italic;
+			color:rgb(0,80,160);
+		}
+		label.check{
+			display:inline;
+			margin:0 0.25em 0 0;
+			line-height:19px;
+			padding:0;
+		}
+		button{
+		    width:auto;
+		    margin:0;
+    		overflow:visible;
+			padding:0 0.5em;
+			height:2.5em;
+			background:transparent;
+			border:0;
+			font-weight:bold;
+			cursor:pointer;
+			color:rgb(242,242,242);
+		}
+		button.inactive{
+			color:rgb(0,80,160);
+		}
+		#codehold{
+			height:2.5em;
+		}
+		
+		div.alphakey{
+			font-size:0;
+			float:left;
+			background-image:url(colorscheme/royalblue/images/royalblue_alpha.gif.html);
+			background-repeat:no-repeat;
+			background-position:0 0;
+			height:12px;
+			width:10px;
+		}
+			
+		#content div.outerhold{
+			display:block;
+			background-color:rgb(3,14,26);
+			display:block;
+			padding:3px;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+			margin:0 0 0.5em 0;
+		}
+		#content div.outerhold.dmargin{
+			margin:0 0 2em 0 !important;
+		}
+		#content div.innerhold{
+			-moz-border-radius: 0px;
+			display:block;
+			background-color:rgb(218,218,218);
+			margin:0;
+			height:1.6em;
+			padding:0.25em 0.25em 0
+		}
+		#content div.texthold{
+			padding:0 0.25em;
+		}
+		#content div.texthold, textarea{
+			height:15em;
+		}
+		#content div.linehold div.checkhold{
+			background-color:rgb(2,8,16);
+			height:19px;
+			width:19px;
+			float:right;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+			margin:0;
+		}
+		#content div.linehold{
+			margin:0 0 1em;
+			text-align:right;
+		}
+		#content div.outerhold.invalid{
+			background-color:rgb(0,80,160);
+		}
+		#content div.focus{
+			background-color:rgb(2,8,16);
+		}
+		
+		div.alert,div.notify,div.process{
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+			padding:0.4em;
+			font-weight:bold;
+		}
+		div.process{
+			background-color:rgb(104,110,118);
+			border:1px solid rgb(205,207,209);
+			color:rgb(242,242,242);
+		}
+		div.alert{
+			background-color:rgb(255,212,0);
+			border:1px solid rgb(204,170,0);
+			color:rgb(3,14,26);
+		}
+		div.notify{
+			background-color:rgb(0,80,160);
+			border:1px solid rgb(0,64,128);
+			color:rgb(242,242,242);
+		}
+		div.alert span{
+			font-weight:bold;
+			font-style:italic;
+			color:rgb(242,242,242);
+		}
+		#content div.focus div.innerhold{
+			background-image:url(colorscheme/royalblue/images/royalblue_inparrow.gif);
+			background-position:right center;
+			background-repeat:no-repeat;
+			border-color:rgb(0,80,160);
+			background-color:rgb(237,237,237);
+		}
+		#maybecanedit{
+		display:none;
+		}/*JAVASCRIPT ENABLED*/
+
+body#max{
+	overflow:hidden;
+	padding:0;
+	margin:0;
+}
+
+#max.splash div#boxfull{
+	display:none;
+}
+#max div#boxfull{
+	display:block;
+	height:630px;
+	left:0;
+	margin:0 0 0 120px; 
+	position:absolute;
+	top:0;
+	overflow:hidden;
+	width:700px;
+}
+#max div#boxscn{
+	display:block;
+	height:630px;
+	background-image:url(colorscheme/royalblue/images/royalblue_cite.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	position:relative;
+	width:700px;
+}
+#max #effihold, #max #effi{
+	display:block;
+}
+#max div#effihold{
+	position:absolute;
+	left:50px;
+	top:50px;
+	height:710px;
+	width:563px;
+}
+#max div#effi{
+	position:absolute;
+	left:50px;
+	top: 50px;
+	height:650px;
+	width:503px;
+	background-image:url(colorscheme/royalblue/images/royalblue_effi.png);
+	cursor:pointer;
+}
+#max div#pane{
+   	background-image:url(colorscheme/royalblue/images/royalblue_onepx_bs.png);
+	display:block;
+	height:400px;
+	overflow: auto;
+	position: absolute; 
+	top: 0px; 
+	width:450px;
+}
+#max div#box{
+	display:block;
+	left:197px;
+	position:absolute;
+	width:450px;
+}*::selection {
+	background:rgb(255,212,0);
+	color:rgb(3,14,26);
+}
+
+*::-moz-selection {
+	background:rgb(255,212,0);
+	color:rgb(3,14,26);
+}
+
+*::-webkit-selection {
+	background:rgb(255,212,0);
+	color:rgb(3,14,26);
+}
+
+/* JAVASCRIPT DISABLED */
+
+/* General */
+
+* {
+	font-family: verdana;
+	font-size: 8pt;
+	color:rgb(3,14,26);
+	background-color:none;
+	white-space:normal;
+}
+body{
+	background-image:url(colorscheme/royalblue/images/royalblue_onepx_bg.png);
+	background-repeat:repeat;
+	padding:1.5em;
+	margin:0;
+}
+
+body.splash{
+	overflow:hidden;
+}
+
+
+img{
+	display:block;
+}
+
+
+div#boxfull{
+	display:block;
+	position:inherit;
+	margin:0;
+	padding:0;
+}
+
+
+div#boxscn{
+	display:block;
+	position:inherit;
+	margin:0;
+	padding:0;
+	width:450px;
+	background-image:url(colorscheme/royalblue/images/royalblue_effiback.png);
+	background-position:-500px -500px;
+}
+
+
+div#effihold, div#effi{
+	width:0;
+	display:none;
+}
+
+
+div#effihold{
+	position:absolute;
+	left:50px;
+	top:50px;
+	height:710px;
+	width:563px;
+	background-image:url(colorscheme/royalblue/images/royalblue_effiback.png);
+	background-color:rgb(0,80,160);
+}
+
+
+div#effi{
+	position:absolute;
+	left:50px;
+	top: 50px;
+	height:650px;
+	width:503px;
+	background-image:url(colorscheme/royalblue/images/royalblue_effi.png);
+	cursor:pointer;
+}
+
+
+div#pane{
+	display:block;
+	overflow:hidden;
+	width:450px;
+}
+
+div#paneind{
+	background-image:url(colorscheme/royalblue/images/royalblue_onepx_bs.png);
+	height:4px;
+	font-size:0;
+	cursor:default;
+}
+
+div#paneind.active{
+	background-image:url(colorscheme/royalblue/images/royalblue_pane_base.png);
+	cursor:pointer;
+}
+
+div#box{
+	position:relative;
+	left:0;
+	margin:0;
+	padding:0;
+	width:450px;
+}
+div#content{
+	width:390px;
+	display:block;
+	background-image:url(colorscheme/royalblue/images/royalblue_onepx_bs.png);
+	line-height: 1.5em;
+	margin:0;
+	padding:0 30px 2em;
+}
+
+#content p, #content i, #content div{
+	margin: 0 0 1em;
+	display: block;
+}
+#content p.note{
+	font-weight:bold;
+}
+#content .highlight{
+	font-weight:bold;
+	color:rgb(0,80,160);
+}
+
+#content div.link{
+	background-color:rgb(104,110,118);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding:0.25em;
+}
+#content div.link strong,div.link a{
+	color:rgb(242,242,242);
+}
+
+div#top{
+	background-image:url(colorscheme/royalblue/images/royalblue_rnd_tp.png);
+	height:17px;
+}
+div#btm{
+	background-image:url(colorscheme/royalblue/images/royalblue_rnd_bt.png);
+	height:17px;
+}
+div#head{
+	height:120px;
+	margin:0;
+	padding:0;
+	background-image:url(colorscheme/royalblue/images/royalblue_onepx_bs.png);
+	position:relative;
+}
+div#title{
+	background-image:url(colorscheme/royalblue/images/royalblue_ebtle.png);
+	background-position:30px bottom;
+	background-repeat:no-repeat;
+	height:65px;
+	position:relative;
+	margin:0 0 1em;
+}
+div#menuhold{
+	width:390px;
+	position:absolute;
+	bottom:20px;
+	left:30px;
+}
+ul#menu{
+	font-size:110%;
+	font-weight:bold;
+	display:block;
+	padding:0;
+	margin:0;
+	line-height:2em;
+}
+ul#menu li{
+	margin:0 1em 0 0;
+	padding:0;
+	display:inline;
+}
+ul#menu a{
+	font-size:10pt;
+	text-decoration:none;
+	outline:none;
+	color:rgb(3,14,26);
+}
+ul#menu a.home{
+	background-image:url(colorscheme/royalblue/images/royalblue_icon_home.gif.html);
+	background-repeat:no-repeat;
+	background-position:center left;
+	padding-left:1.25em;
+}
+
+ul#menu a.selected{
+	color:rgb(104,110,118);
+	cursor:default;
+}
+
+div#menuhold #underline{
+	height:3px;
+	background-color:rgb(3,14,26);
+	font-size:0;
+}
+
+div#menuhold #loadhold{
+	float:right;
+	background-image:url(colorscheme/royalblue/images/royalblue_down.gif);
+	background-repeat:no-repeat;
+	height:2em;
+	font-size:110%;
+	width:9px;
+	background-position:right center;
+	font-weight:bold;
+}
+div#foot{
+	padding: 16px 30px 20px;
+	background-image:url(colorscheme/royalblue/images/royalblue_onepx_bs.png);
+	margin:0;
+}
+
+div#footmenu{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin:0;
+	padding:3px 0;
+	height:2.5em;
+	background-image:url(colorscheme/royalblue/images/royalblue_onepx_fg.png);
+}
+
+div#footmenu.over{
+	background-color:rgb(0,80,160);
+}
+
+div#footmenu div#ftcon{
+	padding:0 0.5em;
+	color:white;
+	text-align:right;
+}
+
+div.clearbasediv{
+	height:1px;
+	width:100%;
+	clear:both;
+	font-size:0;
+}div.ptsdraws{
+	background-image:url(colorscheme/royalblue/images/photos/royalblue_pts_draws.png);
+}
+div.ptsport{
+	background-image:url(colorscheme/royalblue/images/photos/royalblue_pts_port.png);
+}
+div.quote_php{
+	background-image:url(colorscheme/royalblue/images/royalblue_quote_php.png);
+}
+div.hold130{
+	background-position:center center;
+	background-repeat:no-repeat;
+	width:152px;
+	height:195px;
+	border:1px solid rgb(205,207,209);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
+#content .imglft{
+	margin:0 8px 8px 0;
+	float:left;
+}
+
+#content .imgrgt{
+	clear:right;
+	margin:0 0 8px 8px;
+	float:right;
+}
+
+#content div.img152{
+	background-position:center center;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	width:152px;
+	height:59px;
+	background-repeat:no-repeat;
+	margin-bottom:0px;
+}
